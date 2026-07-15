@@ -7,7 +7,7 @@ public class Program
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost/j2ee""root""");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost/j2ee","root","");
             PreparedStatement pst=con.prepareStatement("insert into std values(?,?,?)");
             BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
             do
