@@ -1,8 +1,9 @@
-import java.oi.*;
+import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.WebServlet;
 
+@SuppressWarnings("serial")
 @WebServlet("/logout")
 
 public class logout extends HttpServlet
@@ -14,7 +15,7 @@ public class logout extends HttpServlet
         {
             ses.invalidate();
         }
-        res.senfRedirect("login.html");
+        res.sendRedirect("login.html");
         
     }
 }
