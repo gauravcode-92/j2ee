@@ -14,19 +14,19 @@
 </head>
 <body>
     <div> 
-	<form>
+	<form action="registerservlet" method="post">
 	<h1>Registration</h1>
 	<br><br>
-	<label>Enter Email:</label>
+	<label for="email">Enter Email:</label>
 	<input type="email" name="email" placeholder="Enter Your Email Id">
 	<br><br>
-	<label>Enter Password:</label>
+	<label for="password">Enter Password:</label>
 	<input type="password" name="password" placeholder="Enter Your Password">
 	<br><br>
-	<label>Enter FullName:</label>
+	<label for="fullname">Enter FullName:</label>
 	<input type="text" name="fullname" placeholder="Enter Your FullName">
 	<br><br>
-	<label>Enter Gender:</label>
+	<label for="gender">Enter Gender:</label>
 	<input type="radio" id="male" name="gender" value="male">
 	<label for="male">Male</label>
 	<input type="radio" id="female" name="gender" value="female">
@@ -34,10 +34,10 @@
 	<input type="radio" id="other" name="gender" value="other">
 	<label for="others">Other</label>
 	<br><br>
-	<label>Enter Address:</label>
+	<label for="address">Enter Address:</label>
 	<textarea name="address" placeholder="Enter Your Address" ></textarea>
 	<br><br>
-	<label>Enter City:</label>
+	<label for="city">Enter City:</label>
 	<input type="text" name="city" placeholder="Enter Your City">
 	<br><Br>
 	<label for="country">Enter Your Country:</label>
@@ -49,8 +49,8 @@
 		<option value="Japan">Japan</option>
 	</select>
 	<br><br>
-	<label>Enter DOB:</label>
-    <label for="date">Date</label>
+	<label for="dob">Enter DOB:</label>
+    <label for="date">Date:</label>
 	<select name="date">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -85,7 +85,7 @@
         <option value="31">31</option>
 	</select>
     <label for="month">Month:</label>
-    <select>
+    <select name="month">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -100,7 +100,7 @@
         <option value="12">12</option>
     </select>
     <label for="year">Year:</label>
-    <select>
+    <select name="year">
         <option value="2000">2000</option>
         <option value="2001">2001</option>
         <option value="2002">2002</option>
