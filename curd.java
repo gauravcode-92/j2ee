@@ -46,12 +46,10 @@ public class Program
                 {
                     System.out.println("Exit");
                     break;
-                    
                 }
 
             }while(true);
             
-         }
-            
+         }           
     }
 }
